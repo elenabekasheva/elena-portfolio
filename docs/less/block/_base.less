@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #393f47;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+   
+}
+.noscroll {
+    overflow: hidden;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}   
+
+h1, h2, h3, h4, p, label {margin: 0; padding: 0;}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+.container {    
+    max-width: 1140px;
+    margin-left:  auto;
+    margin-right: auto;    
+    padding: 0 15px;
+    width: 100%;
+}
+.colortext {     
+    position: relative;
+    z-index: 1;
+
+    &::after {
+       display: block;
+       content: "";
+       height: 10px;
+       left: -7px;
+       right: -7px;
+       background-color: #fbdc4d;
+       bottom: 8px;        
+       position: absolute;      
+       z-index: -1;       
+    }     
+}  
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+#overlay.active {
+    display: block;
+}
+.heading {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(29, 99, 165);
+}
