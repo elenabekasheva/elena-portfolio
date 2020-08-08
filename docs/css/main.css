@@ -339,6 +339,10 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
+.icons {
+  color: #FFF;
+  font-size: 10px;
+}
 .page-button {
   background-color: #fbdc4d;
   border: none;
